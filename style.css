@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-colour: linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
+    --secondary-colour: rgb(148, 151, 179);
+    --btn: rgb(67, 81, 146);
+    --btn2: greenyellow;
+    --strong2: black;
+    --display: rgb(222, 250, 255);
+    --h1: whitesmoke;
+    s--color: black;
+}
+
+.dark-theam {
+    --primary-colour: linear-gradient(90deg, rgb(12, 16, 20) 0%, rgb(35, 31, 36) 100%);
+    --secondary-colour: rgb(122, 122, 158);
+    --btn: sandybrown;
+    --strong2: rgb(243, 234, 234);
+    --btn2: cadetblue;
+    --display: rgb(68, 68, 68);
+    --h1: rgb(236, 155, 48);
+    --color: white;
+}
+
+body {
+    overflow: hidden;
+    background: var(--primary-colour);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+.r {
+    background-color: rgb(252, 61, 61);
+    color: azure;
+}
+
+.cont input {
+    color: var(--color);
+    margin: 7px;
+    padding: 10px 5px;
+    font-size: 28px;
+    width: 26vw;
+    height: 9.5vh;
+    background-color: var(--display);
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px 2px black;
+    text-align: right;
+    opacity: 90%;
+}
+
+.cont {
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 29vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(175, 169, 169);
+    border-radius: 15px;
+    background: transparent;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: var(--secondary-colour);
+}
+
+button {
+    text-align: auto;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    width: 6vw;
+    height: 10vh;
+    margin: 2px 2px;
+    margin-top: 15px;
+    padding: 20px 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 1px 3px 3px 2px rgb(40, 39, 39);
+    transition: 1s all;
+    opacity: 90%;
+}
+
+button:active {
+    transform: scale(0.80);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.bt:hover {
+    opacity: 70%;
+}
+
+.orng {
+    background: var(--btn);
+    color: azure
+}
+
+.grr {
+    background-color: var(--btn2);
+    color: black;
+}
+
+h1 {
+    font-size: 5vh;
+    font-weight: 500px;
+    color: var(--h1);
+    margin: 6px 0px -22px 0px;
+    text-align: center;
+}
+
+@media (max-width: 990px) {
+    .box {
+        width: 35vw;
+    }
+    .bt {
+        text-align: auto;
+        width: 7.5vw;
+    }
+    .cont input {
+        width: 34vw;
+    }
+}
+
+@media (max-width: 802px) {
+    .box {
+        width: 80vw;
+    }
+    .bt {
+        text-align: auto;
+        width: 16.4vw;
+    }
+    .cont input {
+        width: 76vw;
+        ;
+    }
+}
+
+.foot strong {
+    color: var(--h1);
+}
+
+.foot {
+    margin-left: 15px;
+    color: var(--strong2);
+    font-size: 19px;
+}
+
+@media (max-width: 370) and (max-height: 530px) {
+    .box {
+        width: 500px;
+        height: 500px;
+    }
+    .box-row {
+        width: 100vh;
+    }
+}
+
+.toggle {
+    display: flex;
+    margin: 17px;
+    justify-content: start;
+    align-items: center;
+    background-color: transparent;
+    background-color: rgb(222, 250, 255);
+    border: 1px solid black;
+    border-radius: 11px;
+    width: 60px;
+    height: 29px;
+    overflow: hidden;
+    opacity: 70%;
+    margin-left: 28px;
+}
+
+.toggle_slider {
+    margin: 1px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 27px;
+    height: 25px;
+    transform: translateX(0);
+    transition: transform 0.5s;
+}
